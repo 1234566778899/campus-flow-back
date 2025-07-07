@@ -37,6 +37,7 @@ public class EventoController {
     // Guardar un nuevo evento
     @PostMapping
     public ResponseEntity<EventoDTO> guardarEvento(@RequestBody EventoDTO eventoDTO) {
+        System.out.println("data: "+eventoDTO);
         return ResponseEntity.ok(eventoService.guardar(eventoDTO));
     }
 

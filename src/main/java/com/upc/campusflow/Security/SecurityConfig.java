@@ -60,6 +60,10 @@ public class SecurityConfig {
                         // Puedes comentar estas líneas cuando implementes autenticación
                         .requestMatchers("/api/campusflow/tareas/**").permitAll()
                         .requestMatchers("/evento/**").permitAll()
+                        .requestMatchers("/grupoForo/**").permitAll()
+                        .requestMatchers("/publicacion/**").permitAll()
+                        .requestMatchers("/nota/**").permitAll()
+                        .requestMatchers("/estudiante/**").permitAll()
 
                         // ⚡ ALTERNATIVA: Si quieres mantener seguridad, descomenta estas líneas:
                         // Tareas - Solo estudiantes y profesores pueden ver/crear tareas

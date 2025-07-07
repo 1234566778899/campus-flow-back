@@ -36,7 +36,9 @@ public class EventoService {
 
     public EventoDTO guardar(EventoDTO eventoDTO) {
         Evento evento = modelMapper.map(eventoDTO, Evento.class);
-
+        System.out.println(eventoDTO);
+        System.out.println("tun tun");
+        System.out.println(evento);
         // Si necesitas establecer el profesor basado en idProfesor
         if (eventoDTO.getIdProfesor() != null) {
             Profesor profesor = new Profesor();
